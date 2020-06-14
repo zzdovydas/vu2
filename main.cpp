@@ -117,7 +117,7 @@ void PrintCrossReferenceTable(vector<WordCounter> wC, int lineLength)
 
     for (int i = 0; i < lineLength; i++)
     {
-        output << setw(5) << i;
+        output << setw(3) << i;
     }
 
     output << endl;
@@ -142,9 +142,9 @@ void PrintCrossReferenceTable(vector<WordCounter> wC, int lineLength)
                 }
 
                 if (contains)
-                    output << setw(5) << "X";
+                    output << setw(3) << "X";
                 else
-                    output << setw(5) << " ";
+                    output << setw(3) << " ";
 
             }
 
